@@ -1,5 +1,4 @@
-import argparse
-import fnmatch
+import argparse, fnmatch
 from pathlib import Path
 
 from framework import all_tests, set_tests_dir
@@ -31,8 +30,7 @@ if __name__ == "__main__":
         set_tests_dir(args.output_dir)
 
     # import tests
-    import custom_tests
-    import staff_tests
+    import custom_tests, staff_tests
 
     # run tests
     tests = all_tests.keys()
